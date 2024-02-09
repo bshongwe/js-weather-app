@@ -1,6 +1,6 @@
 # js-weather-app
 
-# Weather App Documentation (Software Engineer Focus)
+# Weather App Documentation
 This document details about the code structure, functionality,
 and API used in the weather app.
 
