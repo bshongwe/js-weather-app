@@ -1,4 +1,6 @@
 # js-weather-app
+<img src="weather app.gif">
+
 
 # Weather App Documentation
 This document details about the code structure, functionality,
