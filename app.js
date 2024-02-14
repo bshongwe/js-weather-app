@@ -31,14 +31,14 @@ locationBtn.addEventListener("click", () =>{
 // 3.0
 // 3.1 Req: Send
 function requestApi(city){
-    api = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=tested-my-api-key`;
+    api = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=API-KEY`;
     fetchData();
 }
 
 // 3.2 Res: Success
 function onSuccess(position){
     const {latitude, longitude} = position.coords; // getting lat and lon of the user device from coords obj
-    api = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=my-api-key-works`;
+    api = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=API-KEY`;
     fetchData();
 }
 
@@ -75,17 +75,17 @@ function weatherDetails(info){
 
         // 3.5.3: using custom weather icon according to the id which api gives to us
         if(id == 800){
-            wIcon.src = "icons/clear.svg";
+            wIcon.src = "icons/clear.png";
         }else if(id >= 200 && id <= 232){
-            wIcon.src = "icons/storm.svg";  
+            wIcon.src = "icons/storm.png";  
         }else if(id >= 600 && id <= 622){
-            wIcon.src = "icons/snow.svg";
+            wIcon.src = "icons/snow.png";
         }else if(id >= 701 && id <= 781){
-            wIcon.src = "icons/haze.svg";
+            wIcon.src = "icons/haze.png";
         }else if(id >= 801 && id <= 804){
-            wIcon.src = "icons/cloud.svg";
+            wIcon.src = "icons/cloud.png";
         }else if((id >= 500 && id <= 531) || (id >= 300 && id <= 321)){
-            wIcon.src = "icons/rain.svg";
+            wIcon.src = "icons/rain.png";
         }
         
         // 3.5.4: passing a particular weather info to a particular element

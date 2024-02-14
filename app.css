@@ -20,7 +20,7 @@ body{
 }
 .wrapper{
   width: 400px;
-  background: #fff;
+  background: teal;
   border-radius: 7px;
   box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.05);
 }
