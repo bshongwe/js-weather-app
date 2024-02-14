@@ -1,6 +1,8 @@
 # js-weather-app
+<img src="weather app.gif">
 
-# Weather App Documentation (Software Engineer Focus)
+
+# Weather App Documentation
 This document details about the code structure, functionality,
 and API used in the weather app.
 
