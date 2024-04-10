@@ -31,14 +31,14 @@ locationBtn.addEventListener("click", () =>{
 // 3.0
 // 3.1 Req: Send
 function requestApi(city){
-    api = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=API-KEY`;
+    api = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=a9b9fb45a3f3eb5d1a07e349bdee3ef7`;
     fetchData();
 }
 
 // 3.2 Res: Success
 function onSuccess(position){
     const {latitude, longitude} = position.coords; // getting lat and lon of the user device from coords obj
-    api = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=API-KEY`;
+    api = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=a9b9fb45a3f3eb5d1a07e349bdee3ef7`;
     fetchData();
 }
 
